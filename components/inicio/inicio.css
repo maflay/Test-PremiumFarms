@@ -1,0 +1,808 @@
+.seccion_home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.seccion_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.seccion_info>h2 {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.seccion_one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background-image: linear-gradient(180deg, #ffffff7c, #ffffff7c), url(/assets/vegetacion.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+._tesoro_amarillo {
+    display: flex;
+    text-decoration: none;
+    background-image: linear-gradient(180deg, #0000004d, #0000004d), url(/assets/_amarillo_del_ecuador.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    margin: 40px auto;
+}
+
+._banana_solara {
+    display: flex;
+    text-decoration: none;
+    background-image: linear-gradient(180deg, #00000075, #00000075), url(/assets/seccion_banana.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    padding: 180px 0;
+    margin: 40px auto;
+}
+
+.content_tesoro_amarillo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.content_tesoro_amarillo p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: #000000 1px 1px 2px;
+    color: #FBEA10;
+    font-weight: bold;
+    font-size: 52px;
+    white-space: normal;
+    flex: 50% 0;
+    pointer-events: none;
+    text-align: center;
+}
+
+.content_tesoro_amarillo img {
+    flex: 25% 0;
+    width: 10px;
+}
+
+@media(max-width: 768px) {
+    .content_tesoro_amarillo {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .content_tesoro_amarillo img {
+        display: none;
+        width: 250px;
+    }
+
+    .content_tesoro_amarillo p {
+        text-align: center;
+        width: 100%;
+        opacity: 1;
+        text-shadow: #030303 1px 1px 2px;
+        color: white;
+        bottom: 20px;
+    }
+}
+
+.logo_inicio {
+    width: 350px;
+}
+
+.seccion_two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    color: white;
+    /* background-image: linear-gradient(180deg, #ffffff7c, #ffffff7c), url(/assets/fruta_dragon.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.seccion_two h2 {
+    text-shadow: black 1px 1px 10px;
+}
+
+.content_info_productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.info_box_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.info_box_1 img {
+    width: 350px;
+}
+
+.info_box_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.info_box_2 li {
+    text-shadow: black 1px 5px 10px;
+    text-align: start;
+}
+
+.content_accesos_services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content_card_acces {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    gap: 10px;
+    width: 100%;
+}
+
+.content_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.content_img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.content_text::before {
+    content: "";
+    position: absolute;
+    transition: all 0.4s ease;
+    transform: translateX(100%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-image: linear-gradient(180deg, #00000063, #00000063);
+}
+
+.content_text:hover::before {
+    transform: translateX(0);
+}
+
+.content_img img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease;
+    object-fit: cover;
+}
+
+.content_text {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    position: absolute;
+}
+
+.content_text:hover::before {
+    transform: translateX(0);
+}
+
+.content_text p {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 6rem;
+}
+
+.content_text a {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    position: absolute;
+    z-index: 2;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s ease;
+    width: 100%;
+    height: 100%;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.content_text a:hover {
+    opacity: 0.7;
+}
+
+.seccion_three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.content_redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content_img_collage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+}
+
+.content_img_collage img {
+    width: 100%;
+}
+
+/* 
+.content_img_collage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.616);
+} */
+
+.logo_collage {
+    position: absolute;
+    width: 250px !important;
+    background-color: rgba(0, 0, 0, 0.63);
+    border-radius: 20px;
+}
+
+.logo_collage img {
+    width: 100%;
+}
+
+.red_social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+}
+
+.content_red_social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.content_red_social img {
+    width: 100px;
+}
+
+.seccion_four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 100px 0;
+}
+
+.seccion_emprendedores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.seccion_emprendedores h2 {
+    font-size: 3rem;
+    color: #09570A;
+}
+
+.content_emprededor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content_emprededor img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.seccion_transporter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.content_info_transporter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.content_info_transporter>img {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 5;
+    width: 220px;
+}
+
+.content_info_transporter:hover .content_text_transporter {
+    opacity: 1;
+}
+
+.content_delivery_quality {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.content_delivery_quality img {
+    width: 500px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 1011px) {
+
+    .content_delivery_quality {
+        top: 20px !important;
+        right: 20px !important;
+        left: auto;
+        bottom: auto;
+    }
+
+    .content_delivery_quality img {
+        width: 220px;
+    }
+}
+
+.content_img_transporter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.content_img_transporter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #00000096, black);
+}
+
+.content_img_transporter>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content_text_transporter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+    z-index: 5;
+    width: 300px;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.content_text_transporter h2 {
+    font-size: 22px;
+}
+
+.content_text_transporter p {
+    font-size: 12px;
+    text-align: justify;
+}
+
+.content_fruits_principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.content_new_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+._info_new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+._column_reverse {
+    flex-direction: row-reverse;
+}
+
+._img_info_new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    overflow: hidden;
+}
+
+._img_info_new img {
+    width: 100%;
+}
+
+._text_info_new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    font-size: 25px;
+}
+
+@media(max-width:768px) {
+    ._img_info_new {
+        width: 100%;
+    }
+
+    ._text_info_new {
+        font-size: 16px;
+    }
+}
+
+.seccion_show_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 850px;
+    background-image: linear-gradient(180deg, #ffffff, rgba(255, 255, 255, 0.356), white), url(/assets/finca_fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content_info_extra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* margin: 100px 100px 0px; */
+    width: 100%;
+    height: 100%;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 56.25vw;
+    /* 16:9 */
+    min-width: 177.77vh;
+    min-height: 100vh;
+    transform: translate(-50%, -50%);
+    border: 0;
+    pointer-events: none;
+}
+
+.background_video {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.background_video::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.795), #00000050);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.text_info_extra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 210px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    gap: 5px;
+    color: white;
+    z-index: 10;
+}
+
+.text_info_extra img {
+    width: 400px;
+}
+
+.text_info_extra h2 {
+    font-size: 32px;
+}
+
+@media(max-width: 768px) {
+
+    .seccion_show_info {
+        height: auto;
+    }
+
+    .video-wrapper {
+        width: 100vw;
+        height: 260px;
+    }
+
+    .text_info_extra {
+        top: 60px;
+    }
+
+    .background_video::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.76), #0000004d);
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    .text_info_extra img {
+        width: 120px;
+    }
+
+    .text_info_extra h2 {
+        font-size: 16px;
+    }
+
+    .seccion_show_info {
+        margin-top: 40px;
+    }
+}
+
+
+/* -------------------------------------------------------------------- */
+
+/* SLIDER */
+.sliderC {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slider-wrapperC {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    touch-action: pan-y;
+    user-select: none;
+    cursor: grab;
+}
+
+.slider-wrapperC:active {
+    cursor: grabbing;
+}
+
+.slideC {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg1C {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/assets/fruta_dragon.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.bg2C {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/assets/fondo_banano.jpeg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg3C {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/resources/mp3.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.content-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.content-slide>img {
+    pointer-events: none;
+}
+
+.img_frut_slider {
+    width: 100px;
+}
+
+.text_frut_slider {
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+input[name="slider-radioC"] {
+    display: none;
+}
+
+.slider-controlsC label {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #09570A;
+    border-radius: 50%;
+    background: transparent;
+    margin: 0 5px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.slider-controlsC {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+}
+
+.slider-controlsC input[type="radio"]:checked+label {
+    background: #09570a56;
+}
+
+.arrowC {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: #09570A;
+    font-size: 5rem;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+.arrowC-left {
+    left: 0px;
+}
+
+.arrowC-right {
+    right: 0px;
+}
+
+
+@media(max-width: 768px) {
+    .content_info_productos {
+        flex-direction: column;
+    }
+
+    .content_card_acces {
+        flex-direction: column;
+    }
+
+    .content_redes {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .content_img_collage {
+        width: 100%;
+    }
+
+    .red_social {
+        width: 100%;
+    }
+
+    .content_text_transporter {
+        opacity: 1;
+    }
+
+    ._info_new {
+        flex-direction: column;
+    }
+}

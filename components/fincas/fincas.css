@@ -1,0 +1,59 @@
+.banner_fincas_ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    background-image: linear-gradient(180deg, #000000a1), url(/assets/banner_fincas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.banner_fincas_ h2 {
+    font-size: 6rem;
+}
+
+.content_info_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    padding: 40px 0;
+    /* box-shadow: rgba(0, 0, 0, 0.199) 1px 1px 12px; */
+}
+
+.content_img_finca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.content_img_finca img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.content_desc_finca {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    font-size: 25px;
+}
+
+@media(max-width: 768px) {
+    .row_revert {
+        flex-direction: column-reverse !important;
+    }
+
+    .content_info_card {
+        flex-direction: column ;
+    }
+}

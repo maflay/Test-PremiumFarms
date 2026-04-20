@@ -1,0 +1,149 @@
+.main_contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 980px;
+}
+
+.content_contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    background-color: #09570A;
+    padding: 20px;
+    color: white;
+    gap: 10px;
+}
+
+.content_contacto img {
+    width: 250px;
+}
+
+.content_img_contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/contacto_farms.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.content_input_con {
+    position: relative;
+    width: 100%;
+}
+
+.content_input_con p {
+    padding-top: 10px;
+    margin: 0;
+}
+
+.content_input_con input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding: 8px 0;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+}
+
+.content_input_con label {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    color: #aaa;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+
+.content_input_con input:focus~label,
+.content_input_con input:valid~label {
+    top: -12px;
+    font-size: 12px;
+    color: #efb810;
+}
+
+.content_input_con input:focus {
+    border-bottom: 2px solid #ffffff;
+}
+
+.content_input_con span {
+    position: relative;
+    right: 25px;
+    pointer-events: none;
+}
+
+.content_input_con select {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #09570A;
+    border: 2px solid #efcd108f;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+.content_input_con select:focus {
+    outline: none;
+    border-color: #ffcc00;
+    box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.3);
+}
+
+.content_btn_send {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.content_input_con button {
+    color: white;
+    position: relative;
+    right: 0;
+}
+
+._display_none {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .main_contacto {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .content_contacto {
+        width: 100%;
+        height: auto;
+    }
+
+    .content_img_contacto {
+        width: 100%;
+        height: 300px;
+    }
+
+    .content_input_con button {
+        position: relative;
+    }
+}

@@ -1,0 +1,452 @@
+.banner_banana_ {
+    background-image: linear-gradient(180deg, #09570a00, #09570A), url(/assets/banner_banana.png);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.img_banner_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+}
+
+._separator_fruta_ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #F8AA24;
+}
+
+._desc_separator_fruta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+._desc_separator_fruta p {
+    margin: 0;
+}
+
+
+.background_desc_banana {
+    background-image: linear-gradient(180deg, #09570A, #09570a65, #FCC60D), url(/assets/cosecha_pitahaya.png);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+}
+
+.item_desk {
+    display: flex !important;
+}
+
+.item_movil {
+    display: none !important;
+}
+
+.head_fruta_b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.content_img_head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content_img_head img {
+    width: 400px;
+}
+
+.content_text_head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+}
+
+.content_text_head h4 {
+    font-size: 32px;
+    margin: 0;
+    color: #ffba43;
+    font-weight: bold;
+}
+
+.content_text_head h1 {
+    color: white;
+    font-size: 72px;
+    margin: 0;
+    font-weight: bold;
+    padding: 0;
+}
+
+.content_text_head h5 {
+    color: white;
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.content_text_head h3 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: bold;
+    color: #ffba43;
+}
+
+.desc_head_fruta_b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: white;
+    width: 100%;
+    font-size: 42px;
+    font-weight: bold;
+    text-shadow: black 1px 1px 5px;
+}
+
+._desc_banana_solara {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+._desc_banana_solara img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+._cap_b_s_text_ {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+._desc_banana_solara_text_ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+}
+
+._desc_banana_solara_text_ h4 {
+    color: #119413;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+._desc_banana_solara_text_ h1 {
+    font-size: 100px;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+._desc_banana_solara_text_ h5 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+._desc_banana_solara_text_ h3 {
+    color: #119413;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.content_info_fruta_ecuador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+}
+
+.content_card_fruta_ecuador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    gap: 20px;
+}
+
+.content_card_fruta_ecuador h2 {
+    text-shadow: #F39200 1px 1px 2px;
+    color: #F39200;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+.content_card_fruta_ecuador p {
+    text-align: justify;
+    font-size: 18px;
+    text-shadow: white 1px 1px 10px;
+}
+
+.content_card_fruta_ecuador img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.content_card_fruta_ecuador ul,
+.content_card_fruta_ecuador ol {
+    padding-left: 20px;
+    color: black;
+}
+
+.content_card_fruta_ecuador ul li,
+.content_card_fruta_ecuador ol li {
+    margin-bottom: 8px;
+    color: black;
+}
+
+.content_info_box_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content_info_box_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.__img_cont_frutas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.__img_cont_frutas p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 30px;
+    color: #09570A;
+}
+
+.__img_cont_frutas img {
+    width: 100%;
+}
+
+.__img_copany_fruta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.__content_img_company_fruta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #FCC60D;
+}
+
+.__content_img_company_fruta img {
+    width: 50%;
+}
+
+.__content_img_company_fruta_s2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(90deg, #39AA35 50%, white 50%);
+}
+
+.__content_img_company_fruta_s2 img {
+    width: 50%;
+}
+
+.__text_company_fruta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+}
+
+.__text_company_fruta h2 {
+    text-shadow: #F39200 1px 1px 2px;
+    color: #F39200;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.__text_company_fruta p {
+    color: #39AA35;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.__text_company_fruta span {
+    color: black;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+@media (max-width: 1250px) {
+    .__img_cont_frutas p {
+        position: relative;
+        top: 9px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        font-size: 30px;
+        padding: 30px;
+        color: #09570A;
+        background-color: #FCC60D;
+        width: 100%;
+    }
+}
+
+@media(max-width: 1008px) {
+    .content_card_fruta_ecuador {
+        flex-direction: column;
+    }
+
+    .column_reverse_movil {
+        flex-direction: column-reverse !important;
+    }
+
+    .__img_copany_fruta {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 768px) {
+    .banner_banana_ {
+        background-image: linear-gradient(180deg, #09570a00, #09570A), url(/assets/banner_banana_movil.png);
+        height: 800px;
+    }
+
+    .item_desk {
+        display: none !important;
+    }
+
+    .item_movil {
+        display: flex !important;
+    }
+
+    .img_banner_logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: auto;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        width: 100%;
+    }
+
+    .background_desc_banana {
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .head_fruta_b {
+        flex-direction: column;
+    }
+
+    .content_text_head {
+        align-items: center;
+    }
+
+    .desc_head_fruta_b {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        color: white;
+        width: 100%;
+        font-size: 34px;
+        font-weight: bold;
+    }
+
+    ._desc_banana_solara_text_ {
+        align-items: center;
+    }
+
+    ._desc_banana_solara_text_ h1 {
+        font-size: 70px;
+    }
+
+    ._desc_banana_solara_text_ h1,
+    ._desc_banana_solara_text_ h4,
+    ._desc_banana_solara_text_ h5,
+    ._desc_banana_solara_text_ h3 {
+        text-shadow: black 1px 1px 5px;
+    }
+
+    .__text_company_fruta {
+        align-items: center;
+    }
+
+    .__text_company_fruta h2 {
+        text-align: center;
+    }
+
+}

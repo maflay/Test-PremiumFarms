@@ -1,0 +1,125 @@
+.footer_pag {
+    background-color: #09570A;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    width: 100%;
+    position: absolute;
+    padding: 20px 0;
+}
+
+.content_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content_footer {
+    color: rgb(255, 143, 143);
+}
+
+.content_info_company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: black;
+    gap: 20px;
+}
+
+.img_logo_foot {
+    width: 200px;
+}
+
+.box_left {
+    width: 100%;
+}
+
+.info_socios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.box_rigth {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    width: 100%;
+}
+
+.box_rigth img {
+    width: 80%;
+}
+
+.info_data {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    line-height: 8px;
+    color: white;
+}
+
+.infor_des_p_1 {
+    line-height: 8px;
+    color: white;
+    opacity: 0.8;
+}
+
+.infor_des_p_2 {
+    line-height: 8px;
+    color: white;
+    opacity: 0.8;
+}
+
+.separator {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+@media(max-width: 992px) {
+    .content_info_company {
+        flex-direction: column;
+    }
+
+    .info_data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 8px;
+        width: 100%;
+    }
+
+    .box_left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box_rigth {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .infor_des_p_1,
+    .infor_des_p_2 {
+        text-align: center;
+    }
+
+    .info_socios {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 768px) {}

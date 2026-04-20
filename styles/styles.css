@@ -1,0 +1,104 @@
+/* LOADER */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, #004100, green, #004100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Imagen sobre la barra */
+.loader-img img {
+    width: 100px;
+}
+
+/* Barra de fondo */
+.progress-bar {
+    width: 10%;
+    height: 2px;
+    background: transparent;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Barra que se llena */
+.progress-fill {
+    width: 100%;
+    /* Asegura que ocupe todo el ancho de la barra */
+    height: 100%;
+    --c: no-repeat linear-gradient(green 0 0);
+    background: var(--c), var(--c), #c5c5c5;
+    background-size: 60% 100%;
+    animation: l16 3s infinite;
+}
+
+@keyframes l16 {
+    0% {
+        background-position: -150% 0, -150% 0
+    }
+
+    66% {
+        background-position: 250% 0, -150% 0
+    }
+
+    100% {
+        background-position: 250% 0, 250% 0
+    }
+}
+
+
+.titulo {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease;
+}
+
+.titulor {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: transform 0.9s ease-out, opacity 0.5s ease-out;
+}
+
+.titulol {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: transform 0.9s ease-out, opacity 0.5s ease-out;
+}
+
+.show_item {
+    animation: aparecer 0.8s ease forwards;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.show_item_up {
+    animation: aparecer_up 1.8s ease forwards;
+}
+
+@keyframes aparecer_up {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

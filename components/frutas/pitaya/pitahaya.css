@@ -1,0 +1,181 @@
+.banner_pitahaya_ {
+    background-image: url(/assets/banner_pitahaya.png);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.img_banner_logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+}
+
+.background_desc_pitahaya {
+    background-image: linear-gradient(180deg, white 55%, #ffffff 70%), url(/assets/cosecha_pitahaya.png);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+}
+
+.content_info_fruta_ecuador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+}
+
+.content_card_fruta_ecuador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    gap: 20px;
+}
+
+.content_card_fruta_ecuador h2 {
+    text-shadow: #F39200 1px 1px 2px;
+    color: #F39200;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+.content_card_fruta_ecuador p {
+    text-align: justify;
+    font-size: 18px;
+    text-shadow: white 1px 1px 10px;
+}
+
+.content_card_fruta_ecuador img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.content_card_fruta_ecuador ul,
+.content_card_fruta_ecuador ol {
+    padding-left: 20px;
+    color: black;
+}
+
+.content_card_fruta_ecuador ul li,
+.content_card_fruta_ecuador ol li {
+    margin-bottom: 8px;
+    color: black;
+}
+
+.content_info_box_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content_info_box_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.content_desc_product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, white, #ffffff00, white), url(/assets/background_desc_pita.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.content_desc_product p {
+    text-shadow: #39AB48 1px 1px 2px;
+    color: #39AB48;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: start;
+    white-space: normal;
+    position: absolute;
+    left: 40px;
+    bottom: 100px;
+    width: 375px;
+}
+
+.content_dispon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.content_dispon img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.content_dispon>h2 {
+    text-shadow: #F39200 1px 1px 2px;
+    color: #F39200;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+.__high_test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.__high_test img {
+    width: 380px;
+}
+
+@media(max-width: 1008px) {
+    .banner_pitahaya_ {
+        background-position: left;
+        height: 280px;
+    }
+
+    .content_card_fruta_ecuador {
+        flex-direction: column;
+    }
+
+    .column_reverse_movil {
+        flex-direction: column-reverse !important;
+    }
+
+    .content_desc_product {
+        background-position: right;
+        background-size: cover;
+        height: 60vh;
+        background-image: linear-gradient(180deg, white, #ffffff77, white), url(/assets/background_desc_pita.png);
+    }
+
+    .content_desc_product p {
+        text-align: center;
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+}
