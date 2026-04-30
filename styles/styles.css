@@ -1,3 +1,17 @@
+body {
+    /* background-color: black !important; */
+    font-family: 'coolvetica', sans-serif !important;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+    font-family: 'LinLibertine_R', sans-serif !important;
+}
+
 /* LOADER */
 .loader {
     position: fixed;
@@ -76,15 +90,15 @@
 }
 
 @keyframes aparecer {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .show_item_up {
@@ -92,13 +106,57 @@
 }
 
 @keyframes aparecer_up {
-  from {
-    opacity: 0;
-    transform: translateY(-200px);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.flechas-levitando {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    z-index: 10;
+    position: relative;
+    right: 10px;
+    bottom: 130px;
+}
+
+.flecha {
+    width: 16px;
+    height: 16px;
+    border: solid #171c1e;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    animation: levitar 1.5s infinite ease-in-out;
+    opacity: 0.8;
+}
+
+.flecha:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.flecha:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+
+@keyframes levitar {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 0.6;
+    }
+
+    50% {
+        transform: translateY(8px) rotate(45deg);
+        opacity: 1;
+    }
 }

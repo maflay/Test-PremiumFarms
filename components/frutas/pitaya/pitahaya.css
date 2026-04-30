@@ -1,4 +1,8 @@
 .banner_pitahaya_ {
+    padding-top: 60px;
+}
+
+.content_banner_pitahaya_ {
     background-image: url(/assets/banner_pitahaya.png);
     background-position: left;
     background-size: cover;
@@ -6,6 +10,7 @@
     position: relative;
     width: 100%;
     height: 500px;
+    padding-top: 100px;
 }
 
 .img_banner_logo {
@@ -16,7 +21,7 @@
 }
 
 .background_desc_pitahaya {
-    background-image: linear-gradient(180deg, white 55%, #ffffff 70%), url(/assets/cosecha_pitahaya.png);
+    background-image: linear-gradient(180deg, #ffffff 55%, #ffffff 70%), url(/assets/cosecha_pitahaya.png);
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
@@ -54,13 +59,14 @@
 .content_card_fruta_ecuador p {
     text-align: justify;
     font-size: 18px;
-    text-shadow: white 1px 1px 10px;
+    color: black;
 }
 
 .content_card_fruta_ecuador img {
     width: 100%;
     height: 350px;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .content_card_fruta_ecuador ul,
@@ -96,7 +102,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(180deg, white, #ffffff00, white), url(/assets/background_desc_pita.png);
+    background-image: linear-gradient(180deg, #ffffff, #ffffff00, #ffffff), url(/assets/background_desc_pita.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,7 +158,7 @@
 }
 
 @media(max-width: 1008px) {
-    .banner_pitahaya_ {
+    .content_banner_pitahaya_ {
         background-position: left;
         height: 280px;
     }

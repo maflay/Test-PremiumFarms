@@ -1,26 +1,42 @@
 <section class="Navbar">
     <div class="nav-content-logo">
         <a href="#inicio">
-            <img id="icono_movil" alt="Farms" src="/assets/logo_p_f_negro.png">
+            <img id="icono_movil" alt="Farms" src="/assets/logo_p_f_all_blanco.png">
         </a>
     </div>
     <nav class="nav-items" id="navItems">
-        <img id="logo-menu" class="logo-menu" src="/assets/logo_p_f_negro.png" />
-        <a href="#inicio" class="nav-link" data-i18n="header.Inicio">Inicio</a>
-        <!-- <a href="#casinos" class="nav-link">Casinos</a> -->
-        <a href="#fincas" class="nav-link" data-i18n="inicio.fincas">Fincas</a>
-        <a href="#frutas" class="nav-link" data-i18n="inicio.frutas">Frutas</a>
-        <a href="#deliveryFarms" class="nav-link" data-i18n="header.entrega">Entrega</a>
-        <a href="#contacto" class="nav-link" data-i18n="header.Contacto">Contacto</a>
+        <img id="logo-menu" class="logo-menu" src="/assets/logo_p_f_all_blanco.png" />
+        <div class="content_opc_men">
+            <a href="#inicio" class="nav-link" data-i18n="header.Inicio">Inicio</a>
+            <!-- <a href="#casinos" class="nav-link">Casinos</a> -->
+            <div class="dropdown">
+                <p>Productos</p>
+                <div class="submenu">
+                    <a class="nav-link" href="#frutas">Frutas</a>
+                    <a class="nav-link" href="#fincas">Terrenos</a>
+                    <a class="nav-link" href="#pitaya_desc">Pitahaya</a>
+                    <a class="nav-link" href="#banana_desc">Banana</a>
+                    <a class="nav-link" href="#cacao_desc">Cacao</a>
+                    <a class="nav-link" href="#camaron_desc">Camarón</a>
+                </div>
+            </div>
+            <a href="#banana_solara" class="nav-link">Solara</a>
+            <!-- <a href="#frutas" class="nav-link item_movil" data-i18n="inicio.frutas">Frutas</a>
+            <a href="#fincas" class="nav-link item_movil" data-i18n="inicio.fincas">Terrenos</a>
+            <a href="#pitaya_desc" class="nav-link item_movil">Pitahaya</a>
+            <a href="#banana_desc" class="nav-link item_movil">Banana</a>
+            <a href="#cacao_desc" class="nav-link item_movil">Cacao</a>
+            <a href="#camaron_desc" class="nav-link item_movil">Camarón</a> -->
+            <a href="#deliveryFarms" class="nav-link" data-i18n="header.entrega">Delivery Farms</a>
+            <a href="#contacto" class="nav-link" data-i18n="header.Contacto">Contacto</a>
+        </div>
     </nav>
-    <div class="content_idioma">
-        <button title="Español" onclick="i18n.loadLang('es')"><img src="/assets/espania.png" alt="Farms"></button>
-        <button title="English" onclick="i18n.loadLang('en')"><img src="/assets/inglaterra.png" alt="Farms"></button>
-        <button title="中國人" onclick="i18n.loadLang('zh-Hans')"><img src="/assets/bandera_china.png"
-                alt="Farms"></button>
-    </div>
     <div class="nav-toggle" id="navToggle">
         <div class="bar"></div>
+    </div>
+    <div style="right: 45px;" class="content_conf_lang">
+        <img title="Language" id="change_lang" src="/assets/red-mundial_blanco.png" alt="Farms">
+        <p data-i18n="header.chose_lang" id="chose_lang">ES</p>
     </div>
     <div class="overlay"></div>
 </section>

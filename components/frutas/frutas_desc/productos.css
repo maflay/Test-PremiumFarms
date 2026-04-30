@@ -1,0 +1,409 @@
+._product_back__ {
+    background-image: linear-gradient(180deg, white, #ffffff9d, white), url(/assets/__back_23213213_.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+._content_productos_ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 100px 0;
+}
+
+._content_productos_>img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+._content_productos_>h2 {
+    font-size: 50px;
+}
+
+._content_cards_productos_ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+._card_productos_ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 520px;
+    height: 650px;
+    border-radius: 8px;
+    background-color: #004100;
+}
+
+._img_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    scale: 1;
+    width: 100%;
+    height: 70%;
+}
+
+
+._img_card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000075;
+    z-index: 10;
+}
+
+._img_card img {
+    width: 100%;
+    transition: all 0.3s ease;
+    height: 100%;
+    object-fit: cover;
+}
+
+._img_card:hover img {
+    transform: scale(calc(1.1));
+}
+
+._img_card h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    z-index: 11;
+}
+
+._desc_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    padding: 20px;
+    width: 100%;
+    height: 30%;
+    color: white;
+}
+
+._desc_card a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+._desc_card a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+@media(max-width: 768px) {
+    ._card_productos_ {
+        width: 100%;
+    }
+}
+
+
+/* todos los productos */
+
+._info_fruta_ {
+    padding-top: 60px;
+    width: 100%;
+}
+
+._others_products_ {
+    position: absolute;
+    top: -100px;
+    left: 0;
+}
+
+._others_products_ a {
+    text-decoration: none;
+    color: black;
+}
+
+._others_products_ a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+._content_info_fruta_ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 80px 0;
+}
+
+._content_info_fruta_ h2 {
+    color: black;
+}
+
+._content_pict_desc_ {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+._content_pict_ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+}
+
+._img_big_desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+}
+
+._img_big_desc img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+._content_all_img_desc {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    gap: 5px;
+}
+
+._content_all_img_desc img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+._content_all_img_desc img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+._content_desc_ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    color: #cfcfcf;
+}
+
+._content_desc_>p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: #2b2b2b;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.content_bubble_permi {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.content_bubble_permi p {
+    padding: 5px;
+    background-color: #2b2b2b;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all .4s ease;
+}
+
+.content_bubble_permi p:hover {
+    background-color: #2b2b2b91;
+}
+
+._content_notas_ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: #2b2b2b;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+._content_notas_>h5>img {
+    width: 25px;
+    position: relative;
+    bottom: 6px;
+}
+
+._content_calendar_month {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #2b2b2b;
+    width: 100%;
+}
+
+._content_calendar_month>h5>img {
+    width: 21px;
+    position: relative;
+    bottom: 3px;
+}
+
+._cosecha_month_ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+._cosecha_month_ p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    padding: 4px 8px;
+    background-color: green;
+    border-radius: 12px;
+    font-size: 15px;
+    margin: 0;
+}
+
+._content_packing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #2b2b2b;
+    width: 100%;
+}
+
+._content_packing>h5>img {
+    width: 20px;
+    position: relative;
+    bottom: 2px;
+}
+
+@media(max-width:996px) {
+    ._content_pict_desc_ {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    ._img_big_desc {
+        width: 100%;
+        height: 620px;
+    }
+
+    ._img_big_desc img {
+        border-radius: 20px;
+        height: 100%;
+    }
+
+    ._cosecha_month_ {
+        justify-content: center;
+    }
+
+    ._content_all_img_desc {
+        width: 100%;
+    }
+}
+
+
+._back_terrenos_farms_ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #005f0248;
+    padding: 40px 0;
+}
+
+._content_main_info_ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    gap: 30px;
+}
+
+._text_terrenos_ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 50%;
+    height: 100%;
+}
+
+._img_terrenos_ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+}
+
+._img_terrenos_ img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+@media(max-width: 768px) {
+    ._content_main_info_ {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    ._text_terrenos_ {
+        width: 100%;
+    }
+
+    ._img_terrenos_ {
+        width: 100%;
+    }
+}

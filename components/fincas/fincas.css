@@ -36,6 +36,7 @@
 .content_img_finca img {
     width: 100%;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .content_desc_finca {
@@ -43,6 +44,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: justify;
     width: 100%;
     padding: 30px;
     font-size: 25px;
@@ -54,6 +56,10 @@
     }
 
     .content_info_card {
-        flex-direction: column ;
+        flex-direction: column;
+    }
+
+    .banner_fincas_ h2 {
+        font-size: 4rem;
     }
 }

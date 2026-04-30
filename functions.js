@@ -1,10 +1,3 @@
-// window.addEventListener("load", function () {
-//   const loading = document.getElementById("loading");
-//   setTimeout(() => {
-//     loading.style.display = "none";
-//   }, 550);
-// });
-
 if ("scrollRestoration" in history) history.scrollRestoration = "manual";
 document.documentElement.style.scrollBehavior = "auto";
 
@@ -127,8 +120,10 @@ const PageLoader = {
             }
           });
         }
-
-        capturarCorreoDesdeURL();
+        const dropdowns = document.querySelectorAll(".dropdown");
+        dropdowns.forEach((item) => {
+          item.classList.remove("active");
+        });
       })
       .catch((error) => {
         mainContent.innerHTML = "<p>Error al cargar la página.</p>";
@@ -243,6 +238,18 @@ function cargarHeaderYFooter() {
         window.i18n.applyI18n(document.getElementById("main-header"));
       const navToggle = document.getElementById("navToggle");
       const navItems = document.getElementById("navItems");
+      const change_lang = document.getElementById("change_lang");
+      const chose_lang = document.getElementById("chose_lang");
+
+      if (change_lang) {
+        change_lang.addEventListener("click", () => {
+          if (chose_lang.textContent == "ES") {
+            i18n.loadLang("en");
+          } else {
+            i18n.loadLang("es");
+          }
+        });
+      }
 
       if (navToggle && navItems) {
         navToggle.addEventListener("click", () => {
@@ -265,6 +272,42 @@ function cargarHeaderYFooter() {
           }
         }
       });
+
+      document.addEventListener("click", (e) => {
+        const dropdown = e.target.closest(".dropdown");
+
+        document.querySelectorAll(".dropdown").forEach((d) => {
+          if (d !== dropdown) d.classList.remove("active");
+        });
+
+        if (dropdown) {
+          dropdown.classList.toggle("active");
+        }
+      });
+
+      const dropdowns = document.querySelectorAll(".dropdown");
+
+      dropdowns.forEach((drop) => {
+        drop.addEventListener("click", (e) => {
+          e.stopPropagation();
+
+          // cerrar otros dropdowns
+          dropdowns.forEach((d) => {
+            if (d !== drop) d.classList.remove("active");
+          });
+
+          let screenWidth = window.screen.width;
+
+          if (screenWidth <= 1300) {
+            drop.classList.toggle("active");
+          }
+        });
+      });
+
+      // // cerrar si hace click afuera
+      // document.addEventListener("click", () => {
+      //   dropdowns.forEach((d) => d.classList.remove("active"));
+      // });
 
       const navLinks = document.querySelectorAll(".nav-link");
 
@@ -316,23 +359,6 @@ function cargarHeaderYFooter() {
     }
   });
   PageLoader.cargarPagina(clave);
-}
-
-function toRegister() {
-  window.scrollTo(0, 0);
-  navegarA(`contacto`);
-}
-
-function capturarCorreoDesdeURL() {
-  const hash = window.location.hash;
-  const url = new URL("http://prueba.com" + hash.slice(1));
-  const email = url.searchParams.get("email");
-
-  const inputCorreo = document.getElementById("correo");
-
-  if (email && inputCorreo) {
-    inputCorreo.value = decodeURIComponent(email);
-  }
 }
 
 function actualizarMenuActivo() {

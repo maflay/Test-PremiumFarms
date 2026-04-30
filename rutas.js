@@ -24,14 +24,39 @@ const rutasLimpias = {
     css: "/components/delivery_quality/delivery_quality.css",
     js: "/components/delivery_quality/delivery_quality.js",
   },
-  contacto :{
+  contacto: {
     html: "/components/contacto/contacto.html",
     css: "/components/contacto/contacto.css",
-    js: "/components/contacto/contacto.js"
+    js: "/components/contacto/contacto.js",
   },
   banana_solara: {
     html: "/components/frutas/banana/banana.html",
     css: "/components/frutas/banana/banana.css",
-    js: "/components/frutas/banana/banana.js"
-  }
+    js: "/components/frutas/banana/banana.js",
+  },
+  pitaya_desc: {
+    html: "/components/frutas/frutas_desc/pitaya/pitaya_desc.html",
+    css: "/components/frutas/frutas_desc/productos.css",
+    js: "/components/frutas/frutas_desc/productos.js",
+  },
+  productos: {
+    html: "/components/frutas/frutas_desc/productos.html",
+    css: "/components/frutas/frutas_desc/productos.css",
+    js: "/components/frutas/frutas_desc/productos.js",
+  },
+  banana_desc: {
+    html: "/components/frutas/frutas_desc/banana/banana_desc.html",
+    css: "/components/frutas/frutas_desc/productos.css",
+    js: "/components/frutas/frutas_desc/productos.js",
+  },
+  cacao_desc: {
+    html: "/components/frutas/frutas_desc/cacao/cacao_desc.html",
+    css: "/components/frutas/frutas_desc/productos.css",
+    js: "/components/frutas/frutas_desc/productos.js",
+  },
+  camaron_desc: {
+    html: "/components/frutas/frutas_desc/camaron/camaron_desc.html",
+    css: "/components/frutas/frutas_desc/productos.css",
+    js: "/components/frutas/frutas_desc/productos.js",
+  },
 };

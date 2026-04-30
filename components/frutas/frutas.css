@@ -16,8 +16,8 @@
 }
 
 .background_finca_example {
-    background-image: radial-gradient(circle, transparent 0%, #ffffff 90%, white 100%),
-        linear-gradient(180deg, white, rgba(255, 255, 255, 0.411), white),
+    background-image: radial-gradient(circle, transparent 0%, #ffffff 90%, #ffffff 100%),
+        linear-gradient(180deg, #ffffff, #ffffff69, #ffffff),
         url(/assets/backgrounf_cosecha_.png);
     background-position: center;
     background-size: cover;
@@ -60,6 +60,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    text-decoration: none;
     width: 100%;
     gap: 40px;
     padding: 40px 0;
@@ -78,6 +79,7 @@
 .content_img_fruta img {
     width: 100%;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .content_desc_fruta {
@@ -85,9 +87,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: justify;
     width: 100%;
     padding: 30px;
     font-size: 25px;
+    color: black;
 }
 
 .content_desc_fruta h2 {

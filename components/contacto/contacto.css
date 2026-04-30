@@ -1,9 +1,20 @@
 .main_contacto {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 980px;
+    gap: 30px;
+    padding: 60px 0;
+}
+
+.content_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 480px;
 }
 
 .content_contacto {
@@ -11,12 +22,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 50%;
     height: 100%;
     background-color: #09570A;
     padding: 20px;
     color: white;
     gap: 10px;
+    border-radius: 0 20px 20px 0;
 }
 
 .content_contacto img {
@@ -25,14 +37,56 @@
 
 .content_img_contacto {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 40px;
+    width: 50%;
     height: 100%;
-    background-image: url(/assets/contacto_farms.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #005f0248;
+    border-radius: 20px 0 0 20px;
+}
+
+._min_card_contac_ {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+._icono_contact_ {
+    width: 40px;
+    background-color: #008c0042;
+    border-radius: 50%;
+    padding: 5px;
+    overflow: hidden;
+}
+
+._icono_contact_ img {
+    width: 100%;
+    object-fit: cover;
+}
+
+._min_card_contac_ p {
+    margin: 0;
+}
+
+._card_text_contac_ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+}
+
+._card_text_contac_ span {
+    font-size: 22px;
+    color: #212529;
+}
+
+._card_text_contac_ small {
+    color: #212529;
 }
 
 .content_input {
@@ -127,23 +181,95 @@
     display: none;
 }
 
+._content_representates_ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 30px 0;
+    gap: 20px;
+}
+
+._content_representates_ h2 {
+    font-size: 42px;
+}
+
+._content_member_repre_ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+._card_represen_ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 420px;
+}
+
+._card_represen_ img {
+    object-fit: contain;
+    border-radius: 20px;
+    width: 420px;
+    height: 400px;
+}
+
+._card_represen_ p {
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    margin: 0;
+}
+
+._card_represen_ small {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #757575;
+    margin: 0;
+}
+
+
 @media(max-width: 768px) {
     .main_contacto {
-        flex-direction: column-reverse;
-        height: auto;
+        padding: 60px 0;
     }
 
     .content_contacto {
         width: 100%;
         height: auto;
+        border-radius: 0 0 20px 20px;
     }
 
     .content_img_contacto {
         width: 100%;
-        height: 300px;
+        height: 100%;
+        border-radius: 20px 20px 0 0;
     }
 
     .content_input_con button {
         position: relative;
+    }
+
+    .content_form {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    ._content_representates_ {
+        height: 100%;
+        margin-top: 15px;
+    }
+
+    ._card_represen_ {
+        width: 100%;
+        height: 100%;
     }
 }

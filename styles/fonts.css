@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'resolide';
+  src: url('/fonts/ResolideSerif_PERSONAL_USE_ONLY.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'lemonmilk';
+  src: url('/fonts/LEMONMILK-Regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'coolvetica';
+  src: url('/fonts/Coolvetica_Rg.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'lovelade';
+  src: url('/fonts/Zetafonts_Lovelace_Text_Regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Dream_Orphans';
+  src: url('/fonts/Dream_Orphans.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'LinLibertine_R';
+  src: url('/fonts/LinLibertine_R.ttf') format('truetype');
+}
